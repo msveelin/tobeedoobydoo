@@ -13,12 +13,22 @@
       </div>
       
     <div id="error"></div>
-    <form id="form">
-      <input type="text" name="" id="task" placeholder="Add Task" />
-      <input type="date" name="" id="date" />
-      <input type="text" name="" id="notes" placeholder="Notes" />
-      <button id="submit" type="submit">ADD</button>
-    </form>
+   <form id="form">
+        <div class="form-group">
+          <label for="">Add Task</label>
+          <input type="text" name="" id="task" placeholder="Add Task" />
+        </div>
+        <div class="form-group">
+          <label for="">Add Date</label>
+          <input type="date" name="" id="date" />
+        </div>
+        <div class="form-group">
+          <label for="">Add Notes</label>
+          <input type="text" name="" id="notes" placeholder="Notes" />
+        </div>
+
+        <button id="submit" type="submit">ADD</button>
+      </form>
     <div id="todo-list" class="todo-item"></div>
     <div class="footer">
       <p>PS: This uses local storage, meaning that if you clear cache your tasks might disappear. 
