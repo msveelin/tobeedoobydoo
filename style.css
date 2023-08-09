@@ -42,9 +42,9 @@ button {
     justify-content: space-between;
 }
 
-.form-gorup {
+.form-group {
     display: flex;
-    flex-direction: ;
+    flex-direction: column;
     width: 25%;
 }
 #form input {
