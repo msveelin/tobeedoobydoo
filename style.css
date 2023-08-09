@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Borel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #102C57;
+    color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto Mono', monospace;
+}
+
+button {
+    font-family: 'Roboto Mono', monospace;
+}
+
+.container {
+    width: 90%;
+    padding: 30px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 60px;
+    height: 60px;
+}
+
+#form {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#form input {
+    border: 0;
+    border-radius: 10px;
+    padding: 10px 20px;
+    width: 25%;
+}
+
+#submit{
+    background-color: #DAC0A3;
+    border: 0;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 10px;
+    width: 15%;
+}
+
+#todo-list{
+    padding: 20px;
+}
+
+.todo {
+    margin-top: 20px;
+}
+
+.logo h1 {
+    font-family: 'Borel', cursive;
+}
+
+.todo h1{
+    font-family: 'Rubik', sans-serif;
+}
+
+.todo button {
+    background-color: #DAC0A3;
+    color: #102C57;
+    border: 0;
+    margin-right: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.editTask, .editDate, .editNotes{
+    border: 0;
+    border-radius: 10px;
+    padding: 10px 20px;
+    width: 25%;
+    margin-right: 10px;
+}
+
+.todo .del {
+    background-color: black;
+    color: white;
+}
+
+@media (max-width:768px) {
+    .logo {
+        width: 100%;
+        text-align: center;
+    }
+    #form {
+        flex-direction: column;
+    }
+
+    #form input, #form button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
