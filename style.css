@@ -111,7 +111,7 @@ button {
         flex-direction: column;
     }
 
-    .form-group, #form button {
+    #form .form-group, #form button {
         width: 100%;
         margin-bottom: 10px;
     }
