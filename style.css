@@ -42,11 +42,16 @@ button {
     justify-content: space-between;
 }
 
+.form-gorup {
+    display: flex;
+    flex-direction: ;
+    width: 25%;
+}
 #form input {
     border: 0;
     border-radius: 10px;
     padding: 10px 20px;
-    width: 25%;
+    width: 100%;
 }
 
 #submit{
