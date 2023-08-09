@@ -84,6 +84,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
     const editNotesInput = document.createElement("input");
     editNotesInput.classList.add('editNotes');
+    editNotesInput.type="text";
     editNotesInput.textContent = taskToEdit.notes;
 
     const updateBtn = document.createElement("button");
