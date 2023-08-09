@@ -69,6 +69,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
      const editForm = document.createElement("div");
     editForm.classList.add("edit-form");
 
+    const heading = document.createElement("h3");
+    heading.textContent = `Edit Task`;
+
     const editTaskInput = document.createElement("input");
     editTaskInput.classList.add('editTask');
     editTaskInput.type = "text";
@@ -97,6 +100,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       displayTasks();
     });
 
+    editForm.appendChild(heading);
     editForm.appendChild(editTaskInput);
     editForm.appendChild(editDateInput);
     editForm.appendChild(editNotesInput);
