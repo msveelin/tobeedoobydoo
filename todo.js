@@ -66,6 +66,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
   function editTask(index) {
     const taskToEdit = tasks[index];
 
+     const editForm = document.createElement("div");
+    editForm.classList.add("edit-form");
+
     const editTaskInput = document.createElement("input");
     editTaskInput.classList.add('editTask');
     editTaskInput.type = "text";
@@ -94,14 +97,15 @@ document.addEventListener("DOMContentLoaded", (event) => {
       displayTasks();
     });
 
-    // Clear the existing content and append the edit inputs and button
+    editForm.appendChild(editTaskInput);
+    editForm.appendChild(editDateInput);
+    editForm.appendChild(editNotesInput);
+    editForm.appendChild(updateBtn);
+
+    // Clear the existing content and append the edit form
     const todoitem = display.children[index];
     todoitem.innerHTML = ""; // Clear existing content
-
-    todoitem.appendChild(editTaskInput);
-    todoitem.appendChild(editDateInput);
-    todoitem.appendChild(editNotesInput);
-    todoitem.appendChild(updateBtn);
+    todoitem.appendChild(editForm);
   }
 
   function deleteTask(index) {
